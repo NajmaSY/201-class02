@@ -1,12 +1,16 @@
 * {
   margin: 0;
-  padding: 0;
 }
 
 html {
   box-sizing: border-box;
   font-size: 60%;
   scroll-behavior: smooth;
+}
+
+header {
+  background-color: darkcyan;
+  padding: 3rem;
 }
 
 .nav {
@@ -17,7 +21,6 @@ html {
   left: 0;
   width: 100%;
   height: auto;
-  background-color: darkcyan;
   font-size: 5rem;
 }
 
@@ -42,6 +45,9 @@ body {
   font-weight: 400;
   line-height: 2;
   color: white;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 #welcome-page {
@@ -57,6 +63,7 @@ body {
 main {
   color: black;
   text-align: center;
+  background-color: white;
 }
 
 h1 {
@@ -67,11 +74,40 @@ h3 {
   font-size: 3rem;
 }
 
+.slide-show {
+  position: relative;
+  display: block;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+.images {
+  display: flex;
+  width: 100%;
+}
+
+.images img {
+  height: 400px;
+  width: 100%;
+  transition: all 0.15s ease;
+}
+
+a.next-slide,
+a.previous-slide {
+  height: 20px;
+  width: 20px;
+}
+/*
+a.next-slide:hover,
+a.previous-slide:hover {
+}
+*/
+
 footer {
   font-weight: 300;
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 1rem;
   background-color: seagreen;
   border-top: 4px solid black;
   border-bottom: 4px solid black;
