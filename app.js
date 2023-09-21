@@ -42,3 +42,14 @@ if (homeQ === "yes") {
 }
 
 console.log(homeQ);
+
+let moveHouse = prompt("Where do i want to live in the future?");
+
+while (moveHouse !== "London") {
+  moveHouse = prompt("try again");.toLowerCase
+}
+if (moveHouse === "London") {
+  alert("YES!I want to move to London in the future");
+} else {
+  alert("Wrong Answer!");
+}

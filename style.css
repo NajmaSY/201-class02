@@ -103,6 +103,15 @@ a.previous-slide:hover {
 }
 */
 
+#List {
+  color: black;
+}
+
+#countries {
+  color: black;
+  list-style-type: none;
+}
+
 footer {
   font-weight: 300;
   display: flex;
