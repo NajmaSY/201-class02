@@ -8,7 +8,7 @@ function getUserInput(promptMessage) {
 function askQuestion(promptMessage, correctAnswer) {
   let userAnswer = prompt(promptMessage);
   while (userAnswer !== correctAnswer) {
-    userAnswer = prompt("Wrong answer. " + promptMessage);
+    userAnswer = prompt("Guess Again. " + promptMessage);
   }
   alert("Correct, " + correctAnswer);
 }
@@ -25,35 +25,11 @@ function startQuiz() {
   if (eduQ === "yes") {
     alert("YES!I do have a psychology degree");
   } else {
-    alert("Wrong Answer!");
+    alert("Wrong answer!");
   }
-
-  /*
-while (eduQ !== "yes" && eduQ !== "no") {
-  eduQ = prompt(
-    "Got to be yes or no. Do i have a degree in Psychology?"
-  ).toLowerCase();
-}
-
-if (eduQ === "yes") {
-  alert("YES!I do have a psychology degree");
-} else {
-  alert("Wrong Answer!");
-}
-
-console.log(eduQ);
-
-*/
 
   let ageQuestion = "How old am I?";
   askQuestion(askQuestion, "21");
-
-  /*
-while (age !== "21") {
-  age = prompt("wrong answer");
-}
-alert("Correct, i am 21 years old");
-*/
 
   let homeQuestion = "Do i live in Liverpool (yes or no)";
   let homeQ = getUserInput(homeQuestion);
@@ -64,22 +40,6 @@ alert("Correct, i am 21 years old");
     alert("Wrong Answer!");
   }
 
-  /*
-
-while (homeQ !== "yes" && homeQ !== "no") {
-  homeQ = prompt("Try again. Do i live in Liverpool?").toLowerCase();
-}
-
-if (homeQ === "yes") {
-  alert("YES!I do live in Liverpool, home of the beatles");
-} else {
-  alert("Wrong Answer!");
-}
-
-console.log(homeQ);
-
-*/
-
   let moveHouseQuestion = "Where do i want to live in the future?";
   let moveHouse = getUserInput(moveHouseQuestion);
 
@@ -89,11 +49,9 @@ console.log(homeQ);
     alert("Wrong Answer!");
   }
 }
+
+
 /*
-while (moveQ !== "London") {
-  moveHouse = prompt("try again").toLowerCase();
-}
-*/
 
 function startNumberQuiz() {
   let answer = 5;
@@ -102,6 +60,7 @@ function startNumberQuiz() {
   for (let i = 1; i <= 4; i++) {
     if (number > answer) {
       alert("too high");
+      number = prompt("Guess again");
     } else if (number < answer) {
       alert("too low");
       number = prompt("Guess again");
@@ -116,12 +75,12 @@ function startNumberQuiz() {
 
   let idx = list.indexOf(guess);
   console.log(idx);
+
+  while (guess !== idx) {
+    guess = prompt("GuessWhat country do i want to visit in the world");
+  }
+  alert("That's Correct");
 }
-//Q6 - takes in numeric input
-//prompt to guess a number
-//alert - too high/low
-//four attempts
-//after attempt - give correct answer - loop
 
 //Q7-multple possible correct answers
 //give user 6 attempts

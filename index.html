@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>About Me Page</title>
-    <script src="app.js"></script>
+    
   </head>
   <body>
     <header>
@@ -26,15 +26,7 @@
         </ul>
       </nav>
       <button id="startQuiz">Start Quiz</button>
-      <p>
-        <script>getUserInput();</script>
-      </p>
-      <p>
-        <script>askQuestion();</script>
-      </p>
-      <p>
-        <script>startNumberQuiz();</script>
-      </p>
+     
     </header>
 
     <section id="welcome-page">
@@ -45,7 +37,6 @@
     <main>
       <section id="Biography">
         <h3>Biography</h3>
-        
         <p>
           Hello, my name is Najma Saeed and i grew up in Liverpool. I am
           originally from Somalia, a country ive only visited once in my life.
@@ -61,7 +52,7 @@
           recent work experience was at SharpFutures, a tv production company in
           manchester where i created a basic website for a business idea. </li>
           <li>This
-          is where my interest in web development really consolidate my future
+          is where my interest in web development really consolidated my future
           aspirations in the tech industry</li>
         </ul>
       </section>
@@ -76,7 +67,7 @@
         </ul>
       </section>
     </main>
-    <!--use article tag and id-->
+    
     <div class="slide-show">
     
       <a href="#" class="next-slide"></a>
@@ -99,10 +90,11 @@
 
       <figure>
         <img src="software.jpg" alt="img4"/>
-        <figcaption>Be a software engineer</figcaption>
+        <figcaption>What i want to work in</figcaption>
       </figure>
     </section>
     </div>
+    
     <section id="List">
       <h3>Top Ten Countries To Visit In The Future</h3>
       <ol class="countries">
@@ -123,5 +115,23 @@
   <footer>
     <a href="" mailto:najmasy20@gmail.com>Contact Me</a>
   </footer>
-  
+  <script src="./app.js"></script>
+  <p>
+    <script>getUserInput();</script>
+  </p>
+  <p>
+    <script>askQuestion("Do i have a degree in Psychology? (yes or no)", "yes");</script>
+  </p>
+  <p>
+    <script>askQuestion("How old am I?", "21");</script>
+  </p>
+  <p>
+    <script>askQuestion("Do i live in Liverpool (yes or no)", "yes");</script>
+  </p>
+  <p>
+    <script>askQuestion("Where do i want to live in the future?", "london");</script>
+  </p>
+  <p>
+    <script>startNumberQuiz("Guess a number between 1 and 10");</script>
+  </p>
 </html>
