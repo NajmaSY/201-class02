@@ -50,7 +50,6 @@ function startQuiz() {
   }
 }
 
-
 /*
 
 function startNumberQuiz() {
@@ -88,3 +87,5 @@ function startNumberQuiz() {
 //give final score out of 7
 //use console.log throughout to track questions
 //add css
+
+*/

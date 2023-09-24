@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>About Me Page</title>
-    
   </head>
   <body>
     <header>
@@ -25,113 +24,111 @@
           </li>
         </ul>
       </nav>
-      <button id="startQuiz">Start Quiz</button>
-     
-    </header>
 
-    <section id="welcome-page">
-      <h1>Najma Saeed</h1>
-      <p>Tech Educators Student</p>
-      <p>I am 21 years old</p>
-    </section>
+      <div class="welcome-page">
+        <br />
+        <br />
+        <br />
+        <button id="startQuiz">Start Quiz</button>
+        <h1>Najma Saeed</h1>
+        <p>Tech Educators Student</p>
+        <p>21 years old</p>
+      </div>
+    </header>
     <main>
-      <section id="Biography">
-        <h3>Biography</h3>
+      <div class="main">
+        <h2>Biography</h2>
+        <div class="beatles.png.webp" style="height: 200px">Liverpool</div>
+        <div class="somalia.jpg" style="height: 200px">Somalia</div>
         <p>
           Hello, my name is Najma Saeed and i grew up in Liverpool. I am
           originally from Somalia, a country ive only visited once in my life.
           During university, i started doing online coding tutorials and
           realised that i really enjoyed coding.
         </p>
-      </section>
-      <section id="Education">
-        <h3>Education</h3>
+        <br />
+
+        <h2>Education</h2>
+        <div class="manchester.jpg" style="height: 200px">University</div>
         <ul>
           <li>I have a Psychology degree from the University of Manchester.</li>
-          <li>My most
-          recent work experience was at SharpFutures, a tv production company in
-          manchester where i created a basic website for a business idea. </li>
-          <li>This
-          is where my interest in web development really consolidated my future
-          aspirations in the tech industry</li>
+          <li>
+            My most recent work experience was at SharpFutures, a tv production
+            company in manchester where i created a basic website for a business
+            idea.
+          </li>
+          <li>
+            This is where my interest in web development really consolidated my
+            future aspirations in the tech industry
+          </li>
         </ul>
-      </section>
-      <section id="Experience">
-        <h3>Experience</h3>
+        <br />
+
+        <h2>Experience</h2>
+        <div class="software.jpg" style="height: 200px">Future Aspirations</div>
         <ul>
-          <li>I want to become a software engineer and hopefully be able to use my
-          skills to contribute to the exciting technological advances that
-          happen every day.</li>
-          <li>Hopefully, in 2 years time i will be living in
-          London working as a software engineer</li>
+          <li>
+            I want to become a software engineer and hopefully be able to use my
+            skills to contribute to the exciting technological advances that
+            happen every day.
+          </li>
+          <li>
+            Hopefully, in 2 years time i will be living in London working as a
+            software engineer
+          </li>
         </ul>
-      </section>
+        <br />
+      </div>
+
+      <div class="List">
+        <h2>Top Ten Countries To Visit In The Future</h3>
+        <ol class="countries">
+          <li>Italy</li>
+          <li>Dubai</li>
+          <li>Japan</li>
+          <li>Greece</li>
+          <li>France</li>
+          <li>Spain</li>
+          <li>Portugal</li>
+          <li>Canada</li>
+          <li>Morocco</li>
+          <li>America</li>
+        </ol>
+      </div>
     </main>
-    
-    <div class="slide-show">
-    
-      <a href="#" class="next-slide"></a>
-      <a href="#" class="previous-slide"></a>
-      <div class="images">
-      <figure>
-        <img src="beatles.png.webp" alt="img1" />
-        <figcaption>Liverpool</figcaption>
-      </figure>
-
-      <figure>
-        <img src="somalia.jpg" alt="img2"/>
-        <figcaption>Where i'm from</figcaption>
-      </figure>
-
-      <figure>
-        <img src="manchester.jpg" alt="img3"/>
-        <figcaption>Where i studied</figcaption>
-      </figure>
-
-      <figure>
-        <img src="software.jpg" alt="img4"/>
-        <figcaption>What i want to work in</figcaption>
-      </figure>
-    </section>
-    </div>
-    
-    <section id="List">
-      <h3>Top Ten Countries To Visit In The Future</h3>
-      <ol class="countries">
-        <li>Italy</li>
-        <li>Dubai</li>
-        <li>Japan</li>
-        <li>Greece</li>
-        <li>France</li>
-        <li>Spain</li>
-        <li>Portugal</li>
-        <li>Canada</li>
-        <li>Morocco</li>
-        <li>America</li>
-      </ol>
-    </section>
-    
+    <footer>
+      <a href="mailto:najmasy20@gmail.com">Contact Me</a>
+    </footer>
+    <script src="./app.js"></script>
+    <p>
+      <script>
+        getUserInput();
+      </script>
+    </p>
+    <p>
+      <script>
+        askQuestion("Do i have a degree in Psychology? (yes or no)", "yes");
+      </script>
+    </p>
+    <p>
+      <script>
+        askQuestion("How old am I?", "21");
+      </script>
+    </p>
+    <p>
+      <script>
+        askQuestion("Do i live in Liverpool (yes or no)", "yes");
+      </script>
+    </p>
+    <p>
+      <script>
+        askQuestion("Where do i want to live in the future?", "london");
+      </script>
+    </p>
+    <p>
+      <script>
+        startNumberQuiz("Guess a number between 1 and 10");
+      </script>
+    </p>
   </body>
-  <footer>
-    <a href="" mailto:najmasy20@gmail.com>Contact Me</a>
-  </footer>
-  <script src="./app.js"></script>
-  <p>
-    <script>getUserInput();</script>
-  </p>
-  <p>
-    <script>askQuestion("Do i have a degree in Psychology? (yes or no)", "yes");</script>
-  </p>
-  <p>
-    <script>askQuestion("How old am I?", "21");</script>
-  </p>
-  <p>
-    <script>askQuestion("Do i live in Liverpool (yes or no)", "yes");</script>
-  </p>
-  <p>
-    <script>askQuestion("Where do i want to live in the future?", "london");</script>
-  </p>
-  <p>
-    <script>startNumberQuiz("Guess a number between 1 and 10");</script>
-  </p>
 </html>
