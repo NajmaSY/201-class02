@@ -1,5 +1,7 @@
 # 201-class02
 
+# notes
+
 /\*
 ans === "yes" //false
 ans === "no" //true
